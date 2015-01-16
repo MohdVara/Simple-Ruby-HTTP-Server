@@ -125,8 +125,6 @@ loop do
     #Close connection
 	client.close
 	
-	#Add to YAML logs.
-	
 	end
 	
 	
