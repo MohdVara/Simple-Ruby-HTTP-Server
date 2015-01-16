@@ -88,13 +88,13 @@ loop do
 			File.open(path, "rb") do |file|
 			
 				#Send HTTP packet to client
-		        client.print "HTTP/1.1 200 OK\r\n" +
+			    client.print "HTTP/1.1 200 OK\r\n" +
                              "Content-Type: #{Helper.content_type(file)}\r\n" +
                              "Content-Length: #{file.size}\r\n" +
                              "Connection: close\r\n"
 				
 				#Close HTTP header
-                client.print "\r\n"
+				client.print "\r\n"
                  
 				#write the contents of the file to the socket
 				IO.copy_stream(file, client)
@@ -120,7 +120,7 @@ loop do
             #Print content
             client.print message
 			
-        endhh
+        end
         
     #Close connection
 	client.close
