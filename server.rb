@@ -79,7 +79,7 @@ end
  server =  TCPServer.new(HOST,PORT)
  
 #Shows confirmation on server 
-print "\nServer listening on #{PORT} on host #{HOST} \n"	
+print "\nServer listening on port #{PORT} host #{HOST} \n"	
 	
 #Loop forever
 loop do 
