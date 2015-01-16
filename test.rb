@@ -1,7 +1,9 @@
 require 'yaml'
-database_config = YAML::load_file('config.yml')
 
-HOST = database_config["server_config"]["host"]
+CONTENT_TYPE = YAML::load_file("config/content_type.yml")
+DATABASE = YAML::load_file("config/server.yml")
+
+puts CONTENT_TYPE
 
 
-puts HOST
+puts DATABASE["web_root"]

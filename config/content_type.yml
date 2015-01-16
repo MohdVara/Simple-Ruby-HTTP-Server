@@ -1,4 +1,6 @@
-'html' => 'text/html',
-'txt' => 'text/plain', 
-'png' => 'image/png',
-'jpg' => 'image/jpeg'  
+html: text/html
+css: text/css
+js: application/javascript
+txt: text/plain 
+png: image/png
+jpg: image/jpeg  
