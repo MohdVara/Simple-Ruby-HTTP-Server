@@ -12,9 +12,9 @@
 =end
 
 
-require 'yaml'                 #Classes for YAML 
-require 'socket'               #Classes for TCPServer and Socket
-require 'uri'                  #Classes for HTTP server
+require 'yaml'                 #Class for YAML 
+require 'socket'               #Class for TCPServer and Socket
+require 'uri'                  #Class for HTTP server
 
    $LOAD_PATH << './include'   #Load PATH for custom functions
 	
